@@ -40,7 +40,7 @@ What is mean total number of steps taken per day?
     library(ggplot2)
     qplot(total.steps, binwidth=1000, xlab="total number of steps taken each day")
 
-![](pa1.template_files/figure-markdown_strict/unnamed-chunk-3-1.png)
+![](figure-markdown_strict/unnamed-chunk-3-1.png)
 
 1.  Calculate and report the mean and median total number of steps taken
     per day
@@ -70,7 +70,7 @@ What is the average daily activity pattern?
             xlab("5-minute interval") +
             ylab("average number of steps taken")
 
-![](pa1.template_files/figure-markdown_strict/unnamed-chunk-5-1.png)
+![](figure-markdown_strict/unnamed-chunk-5-1.png)
 
     averages[which.max(averages$steps),] 
 
@@ -139,7 +139,7 @@ value at the same interval across days.
 
     qplot(total.steps, binwidth=1000, xlab="total number of steps taken each day")
 
-![](pa1.template_files/figure-markdown_strict/unnamed-chunk-9-1.png)
+![](figure-markdown_strict/unnamed-chunk-9-1.png)
 
 ... and Calculate and report the mean and median total number of steps
 taken per day.
@@ -172,4 +172,4 @@ Are there differences in activity patterns between weekdays and weekends?
     ggplot(averages, aes(interval, steps)) + geom_line() + facet_grid(day ~ .) +
             xlab("5-minute interval") + ylab("Number of steps")
 
-![](pa1.template_files/figure-markdown_strict/unnamed-chunk-12-1.png)
+![](figure-markdown_strict/unnamed-chunk-12-1.png)f
